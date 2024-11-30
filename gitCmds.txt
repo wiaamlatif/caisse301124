@@ -1,0 +1,50 @@
+Aller à Git Bash ouvrir en tant qu'administrateur .
+Aller dans le repertoire à exporter 
+git init
+git add .
+git commit -m "Add existing project files to Git"
+
+ Aller sur le site gitHub -> code -> https -> copier url:
+ https://github.com/wiaamlatif/caisse.git
+
+git remote add origin https://github.com/wiaamlatif/caisse.git
+git push -u -f origin master
+
+Aller sur code
+Clicker sur main
+les files importés sont visibles ...!
+
+
+
+
+
+
+git status : lecture de l'etat des fichiersgit 
+============
+Commandes Bash:
+pwd -> Chemin du Directory Courant .
+ls  -> lecture du centenu du dirctory courant
+echo "Bonjour" >> text4.txt
+less text4.txt Lecture du fichier
+q : pour quitter editeur git
+
+Php Functions :
+==============
+> date_format(date_create($row['created_at']),"d/m/Y H:i:s")
+> <?= date_format(date_create($product['created_at']),format:'d/m/y' )?>
+> $clickedNav=array_search($_SERVER['PHP_SELF'],$urlNav)
+> in_array($clickedNav,range(3,7))
+
+Php cookies:
+============
+$cookie_name = "panier";
+$cookie_value = "la perseverence fini par payer";
+
+//create a cookie:
+setcookie($cookie_name,$cookie_value); 
+
+//retreive cookie:
+$cookie_retreive=$_COOKIE[$cookie_name];
+
+//delete a cookie:
+setcookie($cookie_name,"", time() - 3600);
